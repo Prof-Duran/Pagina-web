@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+    <div class= "navbar">
+        <div class="container">
+            <a class="logo" href="#" >Meu <span>Site</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="img/menu.svg" alt="Open Navegation">
+
+            <nav>
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Conhecimentos</a></li>
+                    <li><a href="#">Depoimentos</a></li>
+                </ul>
+                
+                <ul class="secondary-nav">
+                    <li><a href="#">Contato</a></li>
+                    <li class="go-premium-cta"><a href="#">Seja um parceiro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">Nascido em  &amp; Uberlandia-MG</p>
+                <h1>Engenheiro Aeronáutico Professor Programador</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Conheça minha jornada!</a>
+                    <a href="#" class="watch-video-cta">
+                    <img src="img/watch.svg" alt="Watch a video">Assista ao video
+                    </a>
+                </div>
+            </div>
+
+            <img src="img/illustration.svg" class="hero-img" alt="Illustrator">
+        </div>
+
+    </section>
+     
+    <section class="features-section">
+    <div class="container">
+        <ul class="features-list">
+            <li>Domínio de HTML & CSS</li>
+            <li>Conhecimento de Bootstrap, Github e JavaScript </li>
+            <li>Inglês fluente</li>
+            <li>Experiência no ramo de vendas</li>
+            <li>Experiente na área de robótica educacional</li>
+            <li>Atuação como Professor em diversas escolas de Uberlandia-MG</li>
+        </ul>
+
+        <img src="img/holding-phone.jpg" alt="Man Holding phone">
+    </div>
+    </section>
+
+<section class="testimonials-section">
+    <div class="container">
+        <ul>
+            <li>
+            <img src="img/person.jpg" alt="person">
+            <blockquote>"Quem joga lol, sabe de alguma coisa.</blockquote>
+            <cite>- Rodrigo Reis</cite>
+            </li>
+            <li>
+            <img src="img/person.jpg" alt="person">
+            <blockquote>"Engenheiro</blockquote>
+            <cite>- Gustavo Rocha</cite>
+            </li>
+            <li>
+            <img src="img/person.jpg" alt="person">
+            <blockquote>"ó o Omi</blockquote>
+            <cite>- Guilherme Xavier</cite>
+            </li>
+
+           
+    
+    </ul>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-left">
+            <h2>Contato</h2>
+
+            <form action="">
+                <label for="name">Nome </label>
+                <input type="text" name="name" id="name">
+           
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                <input type="Submit" class="send-message-cta" value="Send message">    
+           
+           
+            </form>
+
+        </div>
+        <div class="contact-rigth">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120774.74752801345!2d-48.33360592623159!3d-18.922058617482122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a4450c10bbbaef%3A0xae370c93616d5c9c!2zVWJlcmzDom5kaWEsIE1H!5e0!3m2!1spt-BR!2sbr!4v1619693329794!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+    </div>
+</section>
+
+
+
+<script>
+
+    const mobileBtn = document.getElementById('mobile-cta')
+          nav = document.querySelector('nav')
+          mobileBtnExit = document.getElementById('mobile-exit');
+
+    mobileBtn.addEventListener('click', () => {
+        nav.classList.add('menu-btn');
+    })
+
+    mobileBtnExit.addEventListener('click', () => {
+        nav.classList.remove('menu-btn');
+    })
+
+
+
+</script>
+
+
+</body>
+</html>
